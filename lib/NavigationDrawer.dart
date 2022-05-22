@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:isubu_universite/Calculator.dart';
 import 'package:isubu_universite/DbHelper.dart';
 import 'package:isubu_universite/Faculties.dart';
+import 'package:isubu_universite/HomePage.dart';
 import 'package:isubu_universite/LoginPage.dart';
 import 'package:isubu_universite/PdfViewer.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -45,7 +46,7 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                 name: name,
                 email: email,
                 onClicked: () => Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => LoginPage(),
+                  builder: (context) => HomePage(),
                 )),
               ),
               Container(
